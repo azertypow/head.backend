@@ -1,8 +1,9 @@
-title: Default Page
-preset: page
+title: Page
 fields:
+  headline:
+    label: Headline
+    type: text
   text:
     label: Text
     type: textarea
     size: large
-
