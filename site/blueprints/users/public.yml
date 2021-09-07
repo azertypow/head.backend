@@ -1,0 +1,18 @@
+title: Public
+
+description: Read-only rights
+
+permissions:
+  access:
+      *: false
+      panel: true
+  pages:
+      *: false
+      read: true
+  files:
+      *: false
+      read: true
+  languages: false
+  site: false
+  user: false
+  users: false
