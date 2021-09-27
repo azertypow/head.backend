@@ -1,5 +1,7 @@
 <template>
-  <router-view></router-view>
+  <div class="v-app">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script lang="ts">
@@ -14,7 +16,11 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.v-app {
+@import "style/main";
 
+.v-app {
+  overflow: hidden;
+  background: $site-background-color;
+  min-height: 100vh;
 }
 </style>
