@@ -8,6 +8,15 @@ return [
 
     'routes' => [
 
+        array(
+            'pattern' => array('/students'),
+            'action' => function () {
+                header('Location: /#/students');
+                exit();
+            }
+        ),
+
+
         // ------------------------------------
         // ----------- REDIRECTIONS ----------------
         // ------------------------------------
