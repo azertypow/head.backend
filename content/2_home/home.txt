@@ -1,5 +1,0 @@
-Title: Home
-
-----
-
-Text: text conten of home
