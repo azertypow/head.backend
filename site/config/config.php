@@ -8,22 +8,6 @@ return [
 
     'routes' => [
 
-        // temps min website redirection
-        array(
-            'pattern' => array('/students'),
-            'action' => function () {
-            }
-        ),
-
-
-        array(
-            'pattern' => array('/', 'alumni', 'contact', 'home', 'project', 'thesis', 'other'),
-            'action' => function () {
-                header('Location: https://distortion.mastermediadesign.ch/');
-                exit();
-            }
-        ),
-
         // ------------------------------------
         // ----------- REDIRECTIONS ----------------
         // ------------------------------------
@@ -32,14 +16,6 @@ return [
             'pattern' => 'head',
             'action' => function () {
                 header('Location: https://www.hesge.ch/head/en/programs-research/master-arts-media-design');
-                exit();
-            }
-        ),
-
-        array(
-            'pattern' => 'series',
-            'action' => function () {
-                header('Location: https://www.youtube.com/playlist?list=PLgtKAOz6PaHugBGfX-SjBFRyMsdnp6LsW');
                 exit();
             }
         ),
