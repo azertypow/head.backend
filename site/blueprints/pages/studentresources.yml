@@ -1,0 +1,26 @@
+title: Student Resources
+
+columns:
+
+  main:
+    width: 1
+
+    fields:
+
+      description EN:
+        width: 1/2
+        type: textarea
+        size: large
+
+      description FR:
+        width: 1/2
+        type: textarea
+        size: large
+
+  items:
+    width: 1
+
+    fields:
+      items:
+        label: Items
+        extends: fields/resourcesItem

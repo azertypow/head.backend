@@ -1,0 +1,27 @@
+label: resourcesItem
+
+type: structure
+
+fields:
+  images:
+    type: files
+    query: page.images
+    size: small
+    multiple: false
+
+  title:
+    type: text
+    size: large
+
+  link:
+    type: url
+
+  description EN:
+    type: writer
+    size: large
+
+  description FR:
+    type: writer
+    size: large
+
+

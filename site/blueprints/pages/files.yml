@@ -1,0 +1,11 @@
+title: Files resources
+
+columns:
+
+  main:
+    width: 1
+
+    fields:
+      files:
+        type: files
+        size: large
