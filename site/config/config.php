@@ -2,8 +2,8 @@
 
 return [
     'api' => [
-//        'basicAuth' => true,
-        'allowInsecure' => true,
+        'basicAuth' => true,
+//        'allowInsecure' => true,
     ],
 
     'routes' => [
@@ -71,7 +71,7 @@ return [
         array(
             'pattern' => 'timeline',
             'action' => function () {
-                header('https://mastermediadesign.ch/media/pages/files-resources/778873b6a3-1632747754/2021-timeline-jury.pdf');
+                header('Location: https://mastermediadesign.ch/media/pages/files-resources/778873b6a3-1632747754/2021-timeline-jury.pdf');
                 exit();
             }
         ),
