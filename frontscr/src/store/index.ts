@@ -1,14 +1,20 @@
-import { createStore } from 'vuex'
+import {createStore, useStore as baseUseStore, Store} from 'vuex'
+import {InjectionKey} from "vue"
 
-export default createStore({
+export default createStore<IState>({
 
   state: {
-    students: undefined,
-  } as IStoreState,
+    students: null,
+    site: null,
+  },
 
   mutations: {
-    updateStudents(state, studentData: IStudents) {
-      state.students = studentData
+    updateStudents(state, studentsData: IStudents) {
+      state.students = studentsData
+    },
+
+    updateSite(state, siteData: ISite) {
+      state.site = siteData
     },
   },
   actions: {
@@ -17,8 +23,15 @@ export default createStore({
   }
 })
 
-export interface IStoreState {
-  students?: IStudents
+export const storeKey: InjectionKey<Store<IState>> = Symbol()
+
+export interface IState {
+  site: ISite | null
+  students: IStudents | null
+}
+
+export interface ISite {
+  title: string
 }
 
 export interface IStudents {
@@ -38,4 +51,8 @@ export interface IResourcesItem {
 
 export interface IImageData {
   url: string
+}
+
+export function useStore () {
+  return baseUseStore(storeKey)
 }

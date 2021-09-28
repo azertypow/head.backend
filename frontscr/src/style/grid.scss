@@ -1,0 +1,9 @@
+.m-g-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.m-g-coll {
+  box-sizing: border-box;
+  padding-left: $gutter;
+}

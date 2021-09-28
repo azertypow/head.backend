@@ -1,28 +1,24 @@
 <template>
-  <div class="v-home">
-    home
+  <div class="v-navigation">
+    <router-link
+        v-for="route of this.$router.getRoutes()"
+        :to="route.path"
+    >{{route.name}}</router-link>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import ResourcesItem from "@/components/ResourcesItem.vue"
-import {IState} from "@/store"
 
 export default defineComponent({
-  name: 'Home',
+  name: 'Navigation',
   components: {
-    ResourcesItem
   },
-
-  mounted() {
-  }
-
 });
 </script>
 
 <style lang="scss" scoped>
-.v-home {
+.v-navigation {
 
 }
 </style>
