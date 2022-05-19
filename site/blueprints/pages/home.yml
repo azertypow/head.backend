@@ -1,0 +1,18 @@
+title: Home
+
+columns:
+
+  main:
+    width: 1
+
+    fields:
+
+      description_en:
+        width: 1/2
+        type: textarea
+        size: large
+
+      description_fr:
+        width: 1/2
+        type: textarea
+        size: large

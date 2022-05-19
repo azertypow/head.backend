@@ -16,11 +16,11 @@ fields:
   link:
     type: url
 
-  description EN:
+  description_EN:
     type: writer
     size: large
 
-  description FR:
+  description_FR:
     type: writer
     size: large
 

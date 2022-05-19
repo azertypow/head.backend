@@ -1,0 +1,15 @@
+label: profileItem
+
+type: structure
+
+fields:
+  first_name:
+    type: text
+    size: large
+
+  name:
+    type: text
+    size: large
+
+  link:
+    type: url

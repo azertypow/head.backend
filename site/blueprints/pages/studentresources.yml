@@ -7,12 +7,12 @@ columns:
 
     fields:
 
-      description EN:
+      description_EN:
         width: 1/2
         type: textarea
         size: large
 
-      description FR:
+      description_FR:
         width: 1/2
         type: textarea
         size: large
