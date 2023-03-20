@@ -37,30 +37,30 @@ columns:
         nodes: false
 
   - width: 2/3
-      fields:
+    fields:
 
-        description_EN:
-          type: textarea
-          size: large
+      description_EN:
+        type: textarea
+        size: large
 
-        description_FR:
-          type: textarea
-          size: large
+      description_FR:
+        type: textarea
+        size: large
 
-        info:
-          label: ""
-          type: info
-          theme: none
-          text: |
-            ## Images or Vimeo links for project gallery
-        images_gallery:
-          label: images
-          type: files
-          query: page.images
-          layout: cards
-          size: tiny
-        embed_items_gallery:
-          label: code embed
-          type: blocks
-          fieldsets:
-            - code
+      info:
+        label: ""
+        type: info
+        theme: none
+        text: |
+          ## Images or Vimeo links for project gallery
+      images_gallery:
+        label: images
+        type: files
+        query: page.images
+        layout: cards
+        size: tiny
+      embed_items_gallery:
+        label: code embed
+        type: blocks
+        fieldsets:
+          - code
