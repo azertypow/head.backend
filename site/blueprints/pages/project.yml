@@ -15,6 +15,13 @@ columns:
         min: 1
         max: 1
 
+      category:
+        label: Category
+        type: multiselect
+        options:
+          type: query
+          query: site.children.template("project").published
+
       students:
         type: writer
         inline: false
