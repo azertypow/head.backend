@@ -9,7 +9,7 @@ use Kirby\Cms\Page;
 
 require_once('site/phpTools/getImageData.php');
 
-$array = ['coucou'];
+$array = [];
 
 /** @var Page $page */
 foreach ($page->children() as $key => $page) {
