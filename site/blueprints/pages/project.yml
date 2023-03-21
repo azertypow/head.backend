@@ -14,13 +14,14 @@ columns:
         size: tiny
         min: 1
         max: 1
-
-      category:
-        label: Category
+      categories:
+        label: Categories
         type: multiselect
         options:
           type: query
-          query: site.children.template("project").published
+          query: site.children.template("categories").first.categories.toStructure
+          text: "{{ item.name }}"
+          value: "{{ item.slug }}"
 
       students:
         type: writer
