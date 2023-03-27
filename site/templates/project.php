@@ -16,7 +16,7 @@ $array = array(
   'professors'      => $page -> professors()      -> kirbytext(),
   'assistants'      => $page -> assistants()      -> kirbytext(),
   'images_gallery'      => array_map(fn($image) => getImageData( $image ), $page->images_gallery()->toFiles()->toArray()),
-  'embed_items_gallery' => $page -> embed_items_gallery()-> toBlocks(),
+  'embed_items_gallery' => $page -> embed_items_gallery()->toBlocks()->toArray(),
 );
 
 echo json_encode($array, JSON_UNESCAPED_UNICODE);
