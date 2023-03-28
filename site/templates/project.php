@@ -8,7 +8,7 @@
 require_once('site/phpTools/getImageData.php');
 
 $array = array(
-  'project_title'   => $page -> project_title()   -> value(),
+  'project_title'   => $page -> title(),
   'images_covers'   => array_map(fn($image) => getImageData( $image ), $page->images_covers()->toFiles()->toArray()),
   'description_EN'  => $page -> description_EN()  -> kirbytext(),
   'description_FR'  => $page -> description_FR()  -> kirbytext(),

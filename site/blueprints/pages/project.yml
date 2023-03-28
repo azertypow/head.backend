@@ -4,9 +4,6 @@ columns:
 
   - width: 1/3
     fields:
-      project_title:
-        type: text
-
       images_covers:
         type: files
         query: page.images

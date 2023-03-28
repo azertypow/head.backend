@@ -15,7 +15,7 @@ $array = [];
 foreach ($page->children() as $key => $page) {
 
   $array[] = [
-    "title" => $page->project_title()->value(),
+    "title" => $page->title(),
     "cover" => array_map(fn($image) => getImageData($image), $page->images_covers()->toFiles()->toArray()),
     "apiUrl" => $page->url(),
     "apiUri" => $page->uri(),
